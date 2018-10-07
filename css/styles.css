@@ -10,7 +10,7 @@ body {
 	font-family: 'Cormorant Garamond', serif;
 	line-height: 1.5;
 	color: #000;
-	background-color: grey;
+	background-color: #e6ffff;
 }
 
 
@@ -43,6 +43,9 @@ a:active {
     display: table;
 }
 
+p, h2{
+	color: #000;
+}
 
 
 
@@ -52,9 +55,10 @@ a:active {
 Navigation
 ***************/
 .name a {
-	font-size: 1.25em;
+	font-size: 3.25em;
 	margin: 0;
 	text-align: center;
+	color:#00e6e6 ;
 }
 
 .main-nav li {

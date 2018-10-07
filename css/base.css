@@ -1,0 +1,40 @@
+/* UI element states pseudo-classes ------------ */
+
+
+/*To style a text field and text area once they have received focus, we can add the focus pseudo class to a selector.*/
+
+input:focus, /*So let's target input elements and add the focus pseudo class */
+textarea:focus { /*And we're going to group this with the text area element selector and we're also gonna give it the focus pseudo class value.*/
+
+  border-color:#52bab3;
+}
+
+/*Summary: Notice how once we click inside a field, the border color  turns aqua green.*/
+
+
+
+
+
+
+/*To target any disabled form element, we'll need to write the disabled pseudo-class: which is states here */
+
+input:focus {
+
+  background: #ddd; /*Let's change a disabled element's background to light grey.*/
+
+ }
+
+/*Summary: This will target all UI elements that are in a disabled state. Now we're able to see that the field with the disabled attribute, the email field, is the only element with the light grey background. And notice how I'm not able to click inside and add any text, because it's disabled. Now if wee need to be more specific we can tell the browser that we only one to target disabled input elements. And we'll do that by simply adding the input type selector, right before the pseudo class. It still going to work the same way. */
+
+
+
+
+/*Let's use the checked state of our three check boxes and we're gooing to create a selector that highlights the sibling label elements with a bold font-weight once a check box is checked. Since we're going to target the label that's adjacent to a check box, we're going to use a familiar selector to target them.*/
+
+input[type="checkbox"]:checked + label { /* First we used an attribute selector to select input elements whose type attribute is checkbox. Then after the square brackets we're going to add the checked pseudo class. Then we'll use the plus sign or the adjacent sibling combinator to select the label that is an immediate sibling of the check box. */
+
+font-weight: bold;
+
+}
+
+/*Summary: Once a check box is checked or in a check state, that adjacent label takes on the bold font weight style.*/
