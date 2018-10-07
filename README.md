@@ -1,1 +1,2 @@
-# HackRU2018
+# Project-2-
+Responsive Layout

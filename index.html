@@ -1,74 +1,195 @@
+<!-----------------
+Main Profile Page
+------------------>
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>GoTravel</title>
-    <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
-  </head>
 
-  <body>
-    <header>
-      <a id = "logo">
-        <h1>GoTravel</h1>
-        <h2>Travel with Ease</h2>
-      </a>
+	<head>
 
-      <nav>
-        <ul>
-          <li>
-            <a>Home</a>
-          </li>
-          <li>
-            <a>Travel Arrangements</a>
-          </li>
-          <li>
-            <a>Hotel</a>
-          </li>
-          <li>
-            <a>Car Rentals</a>
-          </li>
-        </ul>
-    </header>
+		<meta charset="utf-8">
 
-    <div id = "wrapper">
-      <section>
-        <ul id = "gallery">
-          <li>
-            <img src = "img/image.jpeg" alt = "United States">
-            <p>United States</p>
-          </li>
-          <li>
-            <img src = "img/image.jpeg" alt = "Japan">
-            <p>Japan</p>
-          </li>
-          <li>
-            <img src = "img/image.jpeg" alt = "Canada">
-            <p>Canada</p>
-          </li>
-          <li>
-            <img src = "img/image.jpeg" alt = "Europe">
-            <p>Europe</p>
-          </li>
-          <li>
-            <img src = "img/image.jpeg" alt = "South America">
-            <p>South America</p>
-          </li>
-          <li>
-            <img src = "img/image.jpeg" alt = "India">
-            <p>India</p>
-          </li>
-        </ul>
-      </section>
+		<title>GoTravel</title>
 
-      <footer>
-        <p>&copy; 2018 GoTravel, LLC, All rights reserved.</p>
-      </footer>
-    </div>
-  </body>
+		<meta name="viewport"  content="width=device-width, initial-scale=1.0">
+
+		<link rel = "stylesheet" href = "css/normalize.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+
+		<link rel = "stylesheet" href = "css/styles.css">
+
+	</head>
+
+
+	<body>
+
+		<header class = "main-header">
+
+			<div id = "main-header">
+
+				<h3 class = "name"><a>GoTravel</a></h3>
+
+
+			</div>
+
+
+
+
+				<nav>
+
+					<ul class = "main-nav">
+
+						<li><a href = "#main-header"> Home</a></li>
+
+						<li><a href = "#portfolio">Travel Arrangements</a></li>
+
+						<li><a href = "#contact">Hotel</a></li>
+
+						<li><a href = "#contact">Car Rentals</a></li>
+
+					</ul>
+
+				</nav>
+		</header>
+
+		<!--Added clearfix  -->
+		<div class = "clearfix">
+
+			<div id = "portfolio">
+
+				<div class = 'portfolio'>
+
+					<h3 class = "portfolio-title"><a>DESTINATION<a></h3>
+
+					<ul class = "projects">
+
+						<li>
+
+							<img src = "images/New YorkUS.jpg" alt = "Portfolio" >
+
+							<h2>United States</h2>
+
+							<p>This project shows the front page of a marketing website
+							meant for a specific business I'm interested in.</p>
+
+						</li>
+
+						<li>
+
+							<img src = "images/HyogoJAPAN.jpg" alt = "Marketing Page" >
+
+							<h2>Japan</h2>
+
+							<p>This project searches through a specific database to find information that the user is trying to look up.</p>
+
+						</li>
+
+						<li>
+
+							<img src = "images/AlbertaCANADA.jpg" alt = "Search Page" >
+
+							<h2>Canada</h2>
+
+							<p>This project compares travel times based on different transportaion methods and tells you the best one.</p>
+
+						</li>
+
+						<li>
+
+
+							<img src = "images/BarcelonaEUROPE.jpg" alt = "Travel App" >
+
+							<h2>Europe</h2>
+
+							<p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+
+						</li>
+
+						<li>
+
+							<img src = "images/Chile SOUTHAMERICA.jpg" alt = "Photo Gallery" >
+
+							<h2>South America</h2>
+
+							<p>This projects shows picture from a recent trip to the viewer and allows them to easily navigate through photos</p>
+
+						</li>
+
+						<li>
+
+							<img src = "images/NorthernINDIA.jpg" alt = "Calculator" >
+
+							<h2>India</h2>
+
+							<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+
+
+		<div id = "contact">
+
+			<section>
+
+			<h2 class = "contact-title">Contact Page</h2>
+
+			<p class = "contact">I'm currently looking for web development work to help me improve my skills and gain experience in the field. Contact me if you have any questions at all. </p>
+
+			<p class = "email">Email: </p>
+
+			<p class = "phone">Phone:</p>
+
+		</section>
+
+		</div>
+
+	</body>
+
+	<footer id = "footer">
+		<div class = "border-line">
+		</div>
+
+
+		<!-- <h3 class="studentname-footer"><a>Student Name</a>
+		</h3> -->
+
+		<ul>
+			<li class="back-to-top">
+				<a href="#main-header" title="back-to-top">BACK TO TOP</a>
+			</li>
+
+
+			<li id = "foot-li">
+				<ul class="footer-nav">
+					<li>
+						<a href="#main-header">ABOUT V & E</a>
+					</li>
+
+
+					<li>
+						<a href="#portfolio">MY REWARDS</a>
+					</li>
+
+
+					<li>
+						<a href="#contact">MY TRIPS</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+<p id = "copyrights" >&copy; 2018 GoTravel, LLC, All rights reserved.</p>
+	</footer>
+
 
 </html>

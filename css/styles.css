@@ -1,0 +1,328 @@
+/***************
+General
+****************/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Cormorant Garamond', serif;
+	line-height: 1.5;
+	color: #000;
+	background-color: grey;
+}
+
+
+/*link color. Change this later*/
+a:link {
+	text-decoration: none;
+	font-size: 18px;
+
+}
+
+/*unvisited link. Change this later*/
+a:link {
+	color:#000;
+}
+
+/* visited link */
+a:visited {
+	color: blue;
+}
+
+/*Selected link.Change this later */
+a:active {
+	color: pink;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+
+
+/***************
+Navigation
+***************/
+.name a {
+	font-size: 1.25em;
+	margin: 0;
+	text-align: center;
+}
+
+.main-nav li {
+	background: #fff;
+	margin: 5px;
+	list-style: none;
+	max-width: 90%;
+}
+
+.name a, .main-nav {
+	display: block;
+	text-align: center;
+	padding: 10px 1px;
+	text-decoration: none;
+}
+
+/*Change to your own desing*/
+.main-nav a {
+	color: #000;
+	text-transform: uppercase;
+}
+
+/*Change to your own design*/
+.main-nav a:hover {
+	color: #000;
+}
+
+
+
+
+/***************
+Portfolio
+***************/
+
+h1, h2 {
+	text-align: center;
+}
+
+.introduction {
+	text-align: justify;
+	padding: 2%;
+	/*Change this to your own design*/
+	color: #000;
+}
+
+.portfolio {
+	background:#fff;
+	display: inline-block;
+}
+
+.portfolio-title {
+	text-align: center;
+}
+
+p{
+	text-align: justify;
+}
+
+
+
+
+
+
+
+/***************
+Contact
+***************/
+
+.contact {
+	text-align: justify;
+	padding: 10%;
+}
+
+.phone {
+	text-align: center;
+}
+
+.email {
+	text-align: center;
+}
+
+.profile-photo {
+	display:block;
+	max-width: 60%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+img {
+	max-width: 100%;
+	display: block;
+	margin-left:-20px;
+}
+
+li {
+	list-style: none;
+}
+
+
+
+
+
+/***************
+Footer
+***************/
+
+.border-line {
+	height: 1px;
+	/*Change this border in your design*/
+	border-bottom: 1px solid black;
+}
+
+.studentname-footer{
+	display: inline-block;
+	float: left;
+}
+
+.back-to-top {
+	display: inline-block;
+	float: right;
+	list-style: none;
+
+}
+
+
+.footer-nav {
+	display: none;
+}
+
+#copyrights {
+	text-align: left;
+}
+
+
+
+/*Check if good otherwise delete*/
+#foot-li {
+
+	list-style: none;
+	display: inline;
+}
+
+
+
+
+
+
+/*********************
+Media Queries Mobiles
+*********************/
+
+
+
+
+/*********************
+Media Queries Tables
+*********************/
+
+@media (min-width: 768px) {
+	body {
+		padding-top: 5px;
+	}
+
+	.main-nav {
+		text-align: center;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin-right: 1%;
+		margin-left: 2%;
+		background: none;
+	}
+
+	.profile-photo {
+		float: right;
+		display: inline-block;
+		max-width: 35%;
+		margin-left: 10%;
+		margin-right: 6%;
+	}
+
+	.introduction {
+		float: left;
+		width: 47.5%;
+	}
+
+	.projects li {
+		width: 49%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.projects {
+		margin-left: 1%;
+		margin-right: auto;
+	}
+
+	.footer-nav {
+		display: inline-block;
+		list-style-type: none;
+		float: right;
+
+	}
+
+	li {
+		display: inline;
+		padding-right: 20px;
+	}
+
+	.back-to-top {
+		display: none;
+	}
+}
+
+
+
+
+/*********************
+Media Queries Desktop
+*********************/
+
+@media (min-width: 1024px) {
+	.name {
+		float: left;
+		margin: 0 1%;
+		padding: 0 2px;
+	}
+
+	.main-nav {
+		display: inline-block;
+		float: right;
+		margin-left: 5px;
+		min-width: 350px;
+	}
+
+	.profile {
+		margin-top: 100px;
+	}
+
+
+
+	/*Problem photo doesn't float right*/
+	.profile-photo {
+		float: right;
+		padding: 1em;
+	}
+
+	.introduction {
+		float: left;
+		font-size: 17px;
+		text-align: justify;
+	}
+
+	.projects li {
+		width: 33%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.products {
+		margin-left: 1%;
+		margin-right: auto;
+	}
+
+	p {
+		text-align: justify;
+	}
+
+}
