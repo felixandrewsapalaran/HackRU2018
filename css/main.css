@@ -14,6 +14,7 @@ body {
 }
 
 
+
 /*link color. Change this later*/
 a:link {
 	text-decoration: none;
@@ -136,12 +137,12 @@ Contact
 	text-align: center;
 }
 
-.profile-photo {
+/* .profile-photo {
 	display:block;
 	max-width: 60%;
 	margin-left:auto;
 	margin-right:auto;
-}
+} */
 
 
 img {

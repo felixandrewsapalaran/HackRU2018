@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Selectors</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/base2.css">
+	<title>Contact Page</title>
+	<link rel="stylesheet" href="css/1style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
-	<div id="container">
-		<form class="form-contact br">
-	  	<h1>Contact</h1>
-
-		  <label for="name">Name:</label>
-		  <input type="text" id="name">
-
-     	<label for="email">Email:</label>
-     	<input type="email" id="email" placeholder="email@website.com" disabled > <!-- We'll need to add a disabled boolean attribute to one of our text fields. So that way our disabled pseudo class will applied to this email field. Now we're able to see that the field with the disabled attribute, the email field, is the only element with the light grey background. And notice how I'm not able to click inside and add any text, because it's disabled.-->
-
-			<label>Interests:</label>  <!--Notice how each set of labels and checkboxes are sibling elements.-->
-			<input type="checkbox" id="development" name="user_interest"><label for="development">Development</label><br>
-			<input type="checkbox" id="design" name="user_interest"><label for="design">Design</label><br>
-			<input type="checkbox" id="business" name="user_interest"><label for="business">Business</label><br>
-
-     	<label for="msg">Message:</label>
- 			<textarea id="msg" rows="4"></textarea>
-
-		  <input class="btn default" type="submit" value="Submit">
-		</form>
-	</div>
+    <div id="flashMessage">
+        Your message have been sent!
+    </div>
+    <div class="blogNewPost">
+        <h1 class="blogPage-title">Send new message:</h1>
+        <p class="blogTitle-area">
+            <label>Email:</label>
+            <input type="text" id="blogTitleInput">
+        </p>
+        <p class="blogContent-area">
+            <label>Content</label>
+            <textarea id="blogContentInput"></textarea>
+        </p>
+        <p>
+            <button id="previewButton">Send</button>
+        </p>
+    </div>
+    <div class="blogPreviewArea">
+        <h2 id="blogTitlePreview"></h2>
+        <div id="blogContentPreview">
+        </div>
+    </div>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

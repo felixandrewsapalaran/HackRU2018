@@ -14,6 +14,7 @@ body {
 }
 
 
+
 /*link color. Change this later*/
 a:link {
 	text-decoration: none;
@@ -28,6 +29,10 @@ a:link {
 
 /* visited link */
 a:visited {
+	color: blue;
+}
+
+.color{
 	color: blue;
 }
 
@@ -105,7 +110,8 @@ h1, h2 {
 }
 
 .portfolio {
-	background:#fff;
+	background: linear-gradient(to top right, #ccffff 46%, #ffffff 81%);
+	/* background:red; */
 	display: inline-block;
 }
 
@@ -116,10 +122,6 @@ h1, h2 {
 p{
 	text-align: justify;
 }
-
-
-
-
 
 
 
